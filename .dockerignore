@@ -1,0 +1,26 @@
+## Git
+**/.git
+**/.gitignore
+
+## Build output – never copy into the image; the Dockerfile builds from source
+**/bin/
+**/obj/
+
+## IDE / editor artefacts
+**/.vs/
+**/.vscode/
+**/.idea/
+**/*.user
+**/*.suo
+
+## Test results
+**/TestResults/
+
+## Documentation – not needed in the container image
+docs/
+README.md
+
+## Docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
