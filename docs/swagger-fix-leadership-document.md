@@ -29,7 +29,7 @@ The Insurance Claims Processing API experienced a critical developer-experience 
 
 Two configuration errors introduced during initial development were identified and corrected. The fix required changes to **two files**, with **zero downtime** and **no changes to business logic or API contracts**.
 
-The Swagger UI is now fully operational, serving the complete interactive documentation for all 13 API endpoints across 4 business domains.
+The Swagger UI is now fully operational, serving the complete interactive documentation for all 17 API endpoints across 4 business domains.
 
 | | Before Fix | After Fix |
 |---|---|---|
@@ -251,7 +251,7 @@ The Insurance Claims Processing API is built on **.NET 8** using a clean **N-Tie
 
 ## 7. API Surface Reference
 
-The API exposes **13 HTTP endpoints** across **4 business domains**:
+The API exposes **17 HTTP endpoints** across **4 business domains**:
 
 ### Domain 1 — Policy Holders (`/api/PolicyHolder`)
 
@@ -352,7 +352,7 @@ curl GET http://localhost:5277/
 ### Build Status
 
 - ✅ `dotnet build` — **0 errors, 0 warnings**
-- ✅ Swagger UI loads with all 13 endpoints visible
+- ✅ Swagger UI loads with all 17 endpoints visible
 - ✅ OpenAPI JSON document (`swagger.json`) returns valid OAS 3.0.1 spec
 - ✅ CodeQL security scan — **0 alerts**
 - ✅ Automated code review — **0 issues**
