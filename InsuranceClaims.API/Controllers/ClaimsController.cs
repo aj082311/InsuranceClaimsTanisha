@@ -80,6 +80,9 @@ public class ClaimsController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
+        if (dto.ClaimId != 0 && dto.ClaimId != id)
+            return BadRequest($"Route id {id} does not match body ClaimId {dto.ClaimId}.");
+
         dto.ClaimId = id;
 
         try
@@ -102,6 +105,9 @@ public class ClaimsController : ControllerBase
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
+
+        if (dto.ClaimId != 0 && dto.ClaimId != id)
+            return BadRequest($"Route id {id} does not match body ClaimId {dto.ClaimId}.");
 
         dto.ClaimId = id;
 
